@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+body::before{
+    content: '';
+    background: url(../img/bg.jpg) no-repeat center center;
+    background-size: 100vw 100vh;
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.8;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    height: 80vh;
+    width: 80vh;
+    background: linear-gradient(rgb(160, 207, 160),rgb(244, 244, 116));
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    border: 3px solid rgb(102, 44, 44);
+}
+
+.shead{
+    background-color: rgb(144, 17, 255);
+    border-radius: 40%;
+    border:2px solid rgb(81, 59, 59);
+    transform: scale(1.1);
+}
+.sbody{
+    background-color: rgb(188, 128, 240);
+    border-radius: 30%;
+}
+.food{
+    background: radial-gradient( white, rgb(255, 94, 0),red);
+    border-radius: 50%;
+    transform: scale(0.8);
+}
+#Score{
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+#hScoreBox{
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.instructions{
+    position: absolute;
+    top: 10vh;
+    left: 10vh;
+    font-size: large;
+    line-height: 30px;
+}
+h3{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+li{
+    list-style: '~';
+    padding-left: 10px;
+}
